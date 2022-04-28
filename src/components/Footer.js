@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -7,16 +8,40 @@ const Footer = () => {
       <div className="md:mx-40 py-3 mx-10 flex md:flex-row flex-col md:justify-between md:gap-0 gap-4 ">
         <ul className="flex text-lg font-semibold gap-10 text-[#C67E00] mr-0 items-center">
           <Link to="/terms">
-            <li className="link">Terms</li>
+            <motion.li
+              className="link"
+              whileHover={{
+                scale: 1.1,
+
+                transition: { duration: 0.2 },
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Terms
+            </motion.li>
           </Link>
           <Link to="/privacy">
-            <li className="link">Privacy Policy</li>
+            <motion.li
+              className="link"
+              whileHover={{
+                scale: 1.1,
+
+                transition: { duration: 0.2 },
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Privacy Policy
+            </motion.li>
           </Link>
         </ul>
-        <p className="text-lg flex items-center gap-2 text-[#C67E00] cursor-pointer">
-          <span className="text-2xl mt-1">&copy;</span>Copyright 2022 Imali
-          media, All rights reserved.
-        </p>
+        <motion.div
+          className="text-lg flex items-center gap-2 text-[#C67E00] cursor-pointer"
+          animate={{ x: 10, y: -5 }}
+          whileHover={{ scale: 1.06 }}
+        >
+          <span className="text-2xl mt-1">&copy;</span>Copyright 2022 Vinhil ,
+          All rights reserved.
+        </motion.div>
       </div>
     </div>
   );
