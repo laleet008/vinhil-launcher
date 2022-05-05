@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const Error = () => {
   return (
     <Layout>
-      <div className="main_container">
+      <div className="main_container error_container">
         <div className="md:mx-40 mx-10 ">
           <div className="flex justify-center flex-col items-center h-96 relative mb-32">
-            <div className="font-bold relative md:text-[250px] text-[200px] text-[#8C5900] opacity-40">
+            <div className="font-bold relative md:text-[250px] text-[200px] text-gray-300 opacity-40">
               404
             </div>
             <span className="absolute text-gray-200 font-bold md:text-8xl text-4xl tracking-widest	">

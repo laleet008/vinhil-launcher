@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const Heading = () => {
   return (
-    <div className="main ">
-      <div className="md:mx-40 mx-10 ">
+    <div className="main h-[100px] ">
+      <div className="md:mx-40 mx-10">
         <Link to="/">
           <div>
             <motion.img
