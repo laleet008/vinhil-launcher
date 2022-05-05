@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+const currentYear = () => {
+  return new Date().getFullYear();
+};
+
 const Footer = () => {
   return (
     <div className="main h-[80px]">
@@ -34,9 +38,9 @@ const Footer = () => {
             </motion.li>
           </Link>
         </ul>
-        <div className="text-lg flex items-center gap-2 text-[#C67E00] cursor-pointer">
-          <span className="text-2xl mt-1">&copy;</span>Copyright 2022 Vinhil ,
-          All rights reserved.
+        <div className="text-lg flex items-center gap-2 text-[#C67E00]">
+          <span className="text-2xl mt-1">&copy;</span>Copyright {currentYear()}{" "}
+          Vinhil , All rights reserved.
         </div>
       </div>
     </div>
