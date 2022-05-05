@@ -34,14 +34,10 @@ const Footer = () => {
             </motion.li>
           </Link>
         </ul>
-        <motion.div
-          className="text-lg flex items-center gap-2 text-[#C67E00] cursor-pointer"
-          animate={{ x: 10, y: -5 }}
-          whileHover={{ scale: 1.06 }}
-        >
+        <div className="text-lg flex items-center gap-2 text-[#C67E00] cursor-pointer">
           <span className="text-2xl mt-1">&copy;</span>Copyright 2022 Vinhil ,
           All rights reserved.
-        </motion.div>
+        </div>
       </div>
     </div>
   );
