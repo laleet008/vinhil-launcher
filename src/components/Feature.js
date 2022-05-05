@@ -16,7 +16,7 @@ const Feature = () => {
             className="features cursor-pointer"
             whileHover={{
               scale: 1.05,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.2 },
             }}
           >
             <div className="flex md:flex-col flex-row items-center md:justify-center md:gap-0 gap-12 justify-between">
@@ -38,7 +38,7 @@ const Feature = () => {
             className="features cursor-pointer"
             whileHover={{
               scale: 1.05,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.2 },
             }}
           >
             <div className="flex md:flex-col flex-row items-center md:justify-center md:gap-0 gap-12 justify-between">
@@ -61,7 +61,7 @@ const Feature = () => {
             className="features cursor-pointer"
             whileHover={{
               scale: 1.05,
-              transition: { duration: 0.5 },
+              transition: { duration: 0.2 },
             }}
           >
             <div className="flex md:flex-col flex-row items-center md:justify-center md:gap-0 gap-12 justify-between">
